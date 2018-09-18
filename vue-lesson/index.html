@@ -8,8 +8,26 @@
 <body>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
 <div id="root" class="container">
-<modal v-if="showModal" @close = "showModal = false"></modal>
-<button @click="showModal = true">Show Modal</button>
+   <tabs>
+        <tab name="About Us" :selected="true" >
+            <h1>Here is the content for About us tab</h1>
+        </tab>
+        <tab name="About Our Culture" :selected="true" >
+            <h1>Here is the content for about our culture</h1>
+        </tab>
+        <tab name="About Our Vision" :selected="true" >
+            <h1>Here is the content for about our vision</h1>
+        </tab>
+       <tab name="About Other Things    " :selected="true" >
+           <h1>Here is the content for about our vision</h1>
+       </tab>
+   </tabs>
+
+
+</div>
+
+<div class="tab-panels">
+
 </div>
 
 <!-- development version, includes helpful console warnings -->
