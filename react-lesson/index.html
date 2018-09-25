@@ -8,43 +8,49 @@
 </head>
 <body>
 
-<script type="text/jsx">
-var Counter = React.createClass({
+<TaskApp>
+    <Task description="Go To store"/>
+    <Task description="Go To store"/>
+    <Task description="Go To store"/>
+</TaskApp>
 
-    getInitialState: function(){
-      return{
-          count : 0
-      };
-    },
+<!--<script type="text/jsx">-->
+<!--var Counter = React.createClass({-->
 
-    add: function () {
-       this.setState({
-          count : this.state.count + 1
-       });
-   },
+    <!--getInitialState: function(){-->
+      <!--return{-->
+          <!--count : 0-->
+      <!--};-->
+    <!--},-->
 
-    substract: function (){
-        this.setState({
-            count : this.state.count - 1
-        });
-    },
+    <!--add: function () {-->
+       <!--this.setState({-->
+          <!--count : this.state.count + 1-->
+       <!--});-->
+   <!--},-->
 
-    render : function() {
-        return (
-          <div>
-              <h1>Counter: {this.state.count}</h1>
-              <button onClick={this.substract}>Subtract 1</button>
-              <button onClick={ this.add}>Add 1</button>
-          </div>
-        );
-    },
+    <!--substract: function (){-->
+        <!--this.setState({-->
+            <!--count : this.state.count - 1-->
+        <!--});-->
+    <!--},-->
+
+    <!--render : function() {-->
+        <!--return (-->
+          <!--<div>-->
+              <!--<h1>Counter: {this.state.count}</h1>-->
+              <!--<button onClick={this.substract}>Subtract 1</button>-->
+              <!--<button onClick={ this.add}>Add 1</button>-->
+          <!--</div>-->
+        <!--);-->
+    <!--},-->
 
 
-});
+<!--});-->
 
-React.render(<Counter/>, document.body)
-React.render(<Counter/>, document.body)
-</script>
+<!--React.render(<Counter/>, document.body)-->
+<!--React.render(<Counter/>, document.body)-->
+<!--</script>-->
 
 </body>
 </html>
